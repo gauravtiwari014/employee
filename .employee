@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class ArrayListSample {
+	
+	ArrayList <Employee> employees = new ArrayList<Employee>();
+	
+	public void populateArrayList()
+	{
+		Employee emp1 = new Employee("Harsha","RTNagar","8393993993",1000);
+		Employee emp2 = new Employee("Suman","Jayanagar","8393563993",2000);
+		Employee emp3 = new Employee("Kiran","Malleswaram","8393783993",3000);
+		Employee emp4 = new Employee("Madan","Koramangala","8393893993",4000);
+		Employee emp5 = new Employee("Murthy","Vijayanagar","8393343993",5000);
+		employees.add(emp1);
+		employees.add(emp2);
+		employees.add(emp3);
+		employees.add(emp4);
+		employees.add(emp5);
+		
+	}
+	public void displayEmployees()
+	{
+		for(Employee emp:employees)
+		{
+			System.out.println(emp);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayListSample als = new ArrayListSample();
+		als.populateArrayList();
+		als.displayEmployees();
+
+	}
+
+}
+
+
